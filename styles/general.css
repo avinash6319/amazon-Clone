@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body{
+  font-family: 'Comme', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.limit-text-to-2-lines{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+select {
+  cursor: pointer;
+}
+input, select, button {
+  font-family: Roboto, Arial;
+}
+
+
+

@@ -1,0 +1,143 @@
+ .main {
+  margin-top: 60px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 2000px or less, we
+   will divide the grid into 7 columns instead of 8. */
+   @media (max-width: 2000px) {
+    .products-grid {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  /* This @media means when the screen width is 1600px or
+     less, we will divide the grid into 6 columns. */
+  @media (max-width: 1600px) {
+    .products-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .products-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+.product-container{
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-right: 1px solid rgb(231,231,231);
+  border-bottom: 1px solid rgb(231,231,231);
+  display: flex;
+  flex-direction: column;
+  
+}
+.product-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+  
+}
+.product-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.product-name{
+  height: 40px;
+  margin-bottom: 5px;
+}
+.product-rating-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.product-rating-stars{
+  width: 100px;
+  margin-right: 6px;
+}
+.product-rating-count{
+  color: rgb(1,124,182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
+}
+.product-spacer {
+  flex: 1;
+}
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}  
+
+
+
+
+
+
